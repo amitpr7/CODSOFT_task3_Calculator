@@ -1,0 +1,74 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "mycustomfont";
+  src: url("digital-7/digital-7\ \(mono\).ttf") format("woff");
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  height: 600px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 5px solid black; */
+  background-color: rgb(49, 49, 49);
+  box-shadow: -5px -5px 8px rgb(112, 112, 112);
+}
+
+.screen {
+  grid-column: 1/5;
+  grid-row: 1/3;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 25px;
+  font-family: mycustomfont, serif, Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
+  box-shadow: inset 3px 3px 5px;
+  height: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid rgb(129, 127, 127);
+  color: rgb(129, 127, 127);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: -2px -2px rgb(112, 112, 112);
+}
+
+.plus {
+  grid-column: 4/5;
+  grid-row: 4/6;
+}
+
+.enter {
+  grid-column: 4/5;
+  grid-row: 6/8;
+}
+
+.button:hover {
+  cursor: pointer;
+}
